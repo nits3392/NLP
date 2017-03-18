@@ -1,0 +1,11 @@
+
+ 1. Score on development corpus WSJ_24.word:
+
+31254 out of 32853 tags correct
+  accuracy:    95.13
+
+2. Bi-gram Viterbi is used.
+
+3. Unknown words treatments are used to improve performance:
+for example, if previous word is "it", then tag is "VBZ" and tag sequence is calculated 
+based on highest transition probability from previous tag to current tag "VBZ";
